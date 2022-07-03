@@ -1,0 +1,62 @@
+//
+// !!! WARNING !!! AUTO-GENERATED FILE!
+// PLEASE DO NOT MODIFY IT AND USE "platformio.ini":
+// https://docs.platformio.org/page/projectconf/section_env_build.html#build-flags
+//
+{
+    "configurations": [
+        {
+            "name": "PlatformIO",
+            "includePath": [
+                "/home/ttosi/Documents/PlatformIO/Projects/auto-blind-opener/include",
+                "/home/ttosi/Documents/PlatformIO/Projects/auto-blind-opener/src",
+                "/home/ttosi/Documents/PlatformIO/Projects/auto-blind-opener/.pio/libdeps/nanoatmega328new/StepperDriver/src",
+                "/home/ttosi/Documents/PlatformIO/Projects/auto-blind-opener/.pio/libdeps/nanoatmega328new/Stepper/src",
+                "/home/ttosi/Documents/PlatformIO/Projects/auto-blind-opener/.pio/libdeps/nanoatmega328new/Servo/src",
+                "/home/ttosi/.platformio/packages/framework-arduino-avr/cores/arduino",
+                "/home/ttosi/.platformio/packages/framework-arduino-avr/variants/eightanaloginputs",
+                "/home/ttosi/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src",
+                "/home/ttosi/.platformio/packages/framework-arduino-avr/libraries/HID/src",
+                "/home/ttosi/.platformio/packages/framework-arduino-avr/libraries/SPI/src",
+                "/home/ttosi/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src",
+                "/home/ttosi/.platformio/packages/framework-arduino-avr/libraries/Wire/src",
+                ""
+            ],
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true,
+                "path": [
+                    "/home/ttosi/Documents/PlatformIO/Projects/auto-blind-opener/include",
+                    "/home/ttosi/Documents/PlatformIO/Projects/auto-blind-opener/src",
+                    "/home/ttosi/Documents/PlatformIO/Projects/auto-blind-opener/.pio/libdeps/nanoatmega328new/StepperDriver/src",
+                    "/home/ttosi/Documents/PlatformIO/Projects/auto-blind-opener/.pio/libdeps/nanoatmega328new/Stepper/src",
+                    "/home/ttosi/Documents/PlatformIO/Projects/auto-blind-opener/.pio/libdeps/nanoatmega328new/Servo/src",
+                    "/home/ttosi/.platformio/packages/framework-arduino-avr/cores/arduino",
+                    "/home/ttosi/.platformio/packages/framework-arduino-avr/variants/eightanaloginputs",
+                    "/home/ttosi/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src",
+                    "/home/ttosi/.platformio/packages/framework-arduino-avr/libraries/HID/src",
+                    "/home/ttosi/.platformio/packages/framework-arduino-avr/libraries/SPI/src",
+                    "/home/ttosi/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src",
+                    "/home/ttosi/.platformio/packages/framework-arduino-avr/libraries/Wire/src",
+                    ""
+                ]
+            },
+            "defines": [
+                "PLATFORMIO=60002",
+                "ARDUINO_AVR_NANO",
+                "F_CPU=16000000L",
+                "ARDUINO_ARCH_AVR",
+                "ARDUINO=10808",
+                "__AVR_ATmega328P__",
+                ""
+            ],
+            "cStandard": "c11",
+            "cppStandard": "c++11",
+            "compilerPath": "/home/ttosi/.platformio/packages/toolchain-atmelavr/bin/avr-gcc",
+            "compilerArgs": [
+                "-mmcu=atmega328p",
+                ""
+            ]
+        }
+    ],
+    "version": 4
+}
