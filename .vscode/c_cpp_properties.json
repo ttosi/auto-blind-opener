@@ -10,6 +10,7 @@
             "includePath": [
                 "/home/ttosi/Documents/PlatformIO/Projects/auto-blind-opener/include",
                 "/home/ttosi/Documents/PlatformIO/Projects/auto-blind-opener/src",
+                "/home/ttosi/Documents/PlatformIO/Projects/auto-blind-opener/.pio/libdeps/nanoatmega328new/OneButton/src",
                 "/home/ttosi/Documents/PlatformIO/Projects/auto-blind-opener/.pio/libdeps/nanoatmega328new/StepperDriver/src",
                 "/home/ttosi/Documents/PlatformIO/Projects/auto-blind-opener/.pio/libdeps/nanoatmega328new/Stepper/src",
                 "/home/ttosi/Documents/PlatformIO/Projects/auto-blind-opener/.pio/libdeps/nanoatmega328new/Servo/src",
@@ -27,6 +28,7 @@
                 "path": [
                     "/home/ttosi/Documents/PlatformIO/Projects/auto-blind-opener/include",
                     "/home/ttosi/Documents/PlatformIO/Projects/auto-blind-opener/src",
+                    "/home/ttosi/Documents/PlatformIO/Projects/auto-blind-opener/.pio/libdeps/nanoatmega328new/OneButton/src",
                     "/home/ttosi/Documents/PlatformIO/Projects/auto-blind-opener/.pio/libdeps/nanoatmega328new/StepperDriver/src",
                     "/home/ttosi/Documents/PlatformIO/Projects/auto-blind-opener/.pio/libdeps/nanoatmega328new/Stepper/src",
                     "/home/ttosi/Documents/PlatformIO/Projects/auto-blind-opener/.pio/libdeps/nanoatmega328new/Servo/src",
