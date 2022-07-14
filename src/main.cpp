@@ -9,13 +9,13 @@
 #define LDR_PIN A6
 #define BUTTON_PIN 2
 
-const uint16_t OPEN_BRIGHTNESS = 600;
-const uint16_t CLOSE_BRIGHTNESS = 50;
+const uint16_t OPEN_BRIGHTNESS = 500;
+const uint16_t CLOSE_BRIGHTNESS = 200;
 
 // 17320 degrees = 1 revolution on final output gear (maybe not)
 // 3 revolutions to close or open
 const long ONE_REV_DEGREES = 17320;
-const long NUM_REVS = 3.54;
+const long NUM_REVS = 4;
 const long TOTAL_REVS = NUM_REVS * ONE_REV_DEGREES;
 
 uint16_t currentBrightness = 0;
@@ -42,7 +42,7 @@ void flashLed(int count, int milliseconds)
 
 void setup()
 {
-  // Serial.begin(9600);
+  Serial.begin(9600);
 
   pinMode(LED_BUILTIN, OUTPUT);
   pinMode(LDR_PIN, INPUT);
@@ -54,9 +54,10 @@ void setup()
 void loop()
 {
   currentBrightness = analogRead(LDR_PIN);
+  // Serial.println(currentBrightness);
 
-  isDay = currentBrightness > OPEN_BRIGHTNESS;
-  isNight = currentBrightness < CLOSE_BRIGHTNESS;
+  isDay = currentBrightness > OPEN_BRIGHTNESS;// ? true : false;
+  isNight = currentBrightness < CLOSE_BRIGHTNESS;// ? true : false;
 
   // open the blinds
   if (isDay && !hasRunDay)
@@ -64,7 +65,7 @@ void loop()
     digitalWrite(LED_BUILTIN, HIGH);
 
     motor.enable();
-    motor.rotate(NUM_REVS);
+    motor.rotate(TOTAL_REVS);
     motor.disable();
 
     flashLed(10, 100);
@@ -78,7 +79,7 @@ void loop()
     digitalWrite(LED_BUILTIN, HIGH);
 
     motor.enable();
-    motor.rotate(-NUM_REVS);
+    motor.rotate(-TOTAL_REVS);
     motor.disable();
 
     flashLed(10, 100);
